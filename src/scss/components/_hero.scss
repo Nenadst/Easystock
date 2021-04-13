@@ -1,0 +1,108 @@
+.hero {
+  margin-bottom: 5rem;
+
+  &__container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+
+    @include breakpoint(md) {
+      flex-direction: column-reverse;
+    }
+  }
+
+  &__side-menu-box {
+    display: flex;
+    flex-direction: column;
+    padding-top: 2rem;
+    width: 20%;
+    z-index: 100;
+
+    @include breakpoint(md) {
+      width: 100%;
+    }
+  }
+
+  &__box-top {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 4rem;
+
+    @include breakpoint(md) {
+      width: 100%;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+
+    @include breakpoint(sm) {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+
+  &__link {
+    text-decoration: none;
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: $color-gray-dark;
+    padding: 1rem 0;
+    display: flex;
+    align-items: center;
+    transition: all 0.2s ease-in-out;
+
+    @include breakpoint(lg) {
+      font-size: 1.7rem;
+    }
+
+    @include breakpoint(md) {
+      font-size: 1.8rem;
+    }
+
+    &:hover {
+      background-color: $color-cyan-light;
+      color: $color-white;
+    }
+
+    &:hover .hero__svg-map,
+    &:hover .hero__link-text {
+      fill: $color-white;
+      transform: translateX(2.5rem);
+    }
+  }
+
+  &__link-text {
+    transition: all 0.3s ease-in-out;
+  }
+
+  &__svg-map {
+    height: 2rem;
+    width: 2rem;
+    fill: $color-gray-light-1;
+    margin-right: 0.5rem;
+    transition: all 0.3s ease-in-out;
+  }
+
+  &__box-bottom {
+    display: flex;
+    flex-direction: column;
+
+    @include breakpoint(md) {
+      width: 100%;
+      flex-direction: row;
+    }
+
+    @include breakpoint(sm) {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+
+  &__img {
+    height: 42rem;
+    width: 100%;
+
+    @include breakpoint(sm) {
+      height: 30rem;
+    }
+  }
+}

@@ -1,0 +1,218 @@
+.header {
+  padding-top: 1.8rem;
+
+  &__top {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+
+  &__contact-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-basis: 33%;
+
+    @include breakpoint(lg) {
+      flex-basis: 40%;
+    }
+
+    @include breakpoint(md) {
+      display: none;
+    }
+  }
+
+  &__phone {
+    text-decoration: none;
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: $color-gray;
+
+    @include breakpoint(lg) {
+      font-size: 1.7rem;
+    }
+  }
+
+  &__blog {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 1.6rem;
+    font-weight: bold;
+    color: $color-gray;
+
+    @include breakpoint(lg) {
+      font-size: 1.6rem;
+    }
+  }
+
+  &__about {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 1.6rem;
+    font-weight: bold;
+    color: $color-gray;
+
+    @include breakpoint(lg) {
+      font-size: 1.5rem;
+    }
+  }
+
+  &__btn-box {
+    display: flex;
+    align-items: center;
+
+    @include breakpoint(sm) {
+      flex-direction: column;
+      justify-content: flex-start;
+    }
+  }
+
+  &__mail {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 1.6rem;
+    font-weight: bold;
+    color: $color-gray;
+    display: flex;
+    align-items: center;
+
+    @include breakpoint(lg) {
+      font-size: 1.5rem;
+    }
+
+    @include breakpoint(md) {
+      margin-bottom: 0.5rem;
+    }
+  }
+
+  &__svg-mail {
+    height: 1.5rem;
+    width: 1.5rem;
+    fill: $color-gray;
+    margin-right: 1rem;
+  }
+
+  &__lang {
+    text-transform: uppercase;
+    font-size: 1.6rem;
+    font-weight: bold;
+    color: $color-gray;
+    margin-left: 3rem;
+    border: none;
+    transition: all 0.3s ease-in-out;
+
+    @include breakpoint(lg) {
+      font-size: 1.5rem;
+      margin-left: 2rem;
+    }
+
+    @include breakpoint(md) {
+      margin-bottom: 0.5rem;
+    }
+
+    @include breakpoint(sm) {
+      margin-left: 0;
+    }
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+
+  &__svg-arrow {
+    height: 2rem;
+    width: 2rem;
+    fill: $color-orange;
+  }
+
+  &__svg-user {
+    height: 2rem;
+    width: 2rem;
+    fill: $color-gray;
+    margin-left: 3rem;
+
+    @include breakpoint(lg) {
+      margin-left: 2rem;
+    }
+
+    @include breakpoint(sm) {
+      margin-left: 0;
+    }
+  }
+  &__svg-cart {
+    height: 2rem;
+    width: 2rem;
+    fill: $color-gray;
+    margin-left: 3rem;
+
+    @include breakpoint(sm) {
+      margin-left: 0;
+    }
+  }
+
+  &__bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 2rem;
+
+    @include breakpoint(md) {
+      margin-bottom: 2rem;
+      align-items: center;
+      flex-direction: column;
+    }
+  }
+
+  &__search-box {
+    display: flex;
+    align-items: center;
+
+    @include breakpoint(md) {
+      align-self: flex-start;
+    }
+  }
+
+  &__svg-search {
+    height: 2rem;
+    width: 2rem;
+    fill: $color-cyan-dark;
+  }
+
+  &__input {
+    border: none;
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: $color-gray;
+    margin-left: 1.5rem;
+    max-width: 17rem;
+
+    @include breakpoint(lg) {
+      margin-left: 0.5rem;
+      font-size: 1.7rem;
+    }
+  }
+
+  ::placeholder {
+    color: $color-gray-light-1;
+    font-weight: normal;
+  }
+
+  &__hamburger {
+    display: none;
+
+    @include breakpoint(md) {
+      display: block;
+      align-self: flex-end;
+    }
+  }
+
+  &__hamburger-icon {
+    height: 3.5rem;
+    width: 5.5rem;
+    fill: $color-cyan-dark;
+  }
+
+  &__active {
+    display: block !important;
+  }
+}

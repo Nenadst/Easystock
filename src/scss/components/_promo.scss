@@ -1,0 +1,99 @@
+.promo {
+  margin-bottom: 4.4rem;
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__heading-box {
+    text-align: center;
+    margin-bottom: 4rem;
+  }
+
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+
+    @include breakpoint(md) {
+      flex-direction: column;
+    }
+  }
+
+  &__box:not(:last-child) {
+    margin-right: 8rem;
+
+    @include breakpoint(md) {
+      margin: 0;
+    }
+  }
+
+  &__row {
+    margin-bottom: 2rem;
+  }
+
+  &__svg-check {
+    height: 3rem;
+    width: 3rem;
+    fill: $color-black;
+    margin-right: 2rem;
+    transition: all 0.3s ease-in-out;
+  }
+
+  &__text {
+    text-decoration: none;
+    font-size: 2.4rem;
+    font-weight: bold;
+    color: $color-black;
+    display: flex;
+    transition: all 0.1s ease-in-out;
+
+    &:hover {
+      color: $color-cyan;
+    }
+
+    &:hover .promo__svg-check,
+    &:hover .promo__span {
+      fill: $color-cyan;
+      transform: translateX(1.5rem);
+    }
+  }
+
+  &__span {
+    transition: all 0.3s ease-in-out;
+  }
+
+  &__text-box {
+    margin-bottom: 2.3rem;
+  }
+
+  &__btn-text {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: $color-gray;
+  }
+
+  &__btn-box {
+    border: 1px solid $color-earls-green;
+
+    &:hover {
+      border: 1px solid $color-green;
+      box-shadow: 0.1rem 0.1rem 1.1rem rgba($color-earls-green, 0.3);
+    }
+  }
+
+  &__btn {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 3rem;
+    color: $color-earls-green;
+    padding: 2rem 3.8rem;
+    display: inline-block;
+
+    &:hover {
+      color: $color-green;
+    }
+  }
+}

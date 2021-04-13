@@ -1,0 +1,96 @@
+.nav {
+  display: flex;
+  flex-basis: 80%;
+  padding-left: 1rem;
+
+  @include breakpoint(md) {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  &__list {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+
+    @include breakpoint(lg) {
+      align-items: flex-end;
+    }
+    @include breakpoint(md) {
+      display: none;
+      flex-direction: column;
+      width: 100%;
+      align-items: center;
+    }
+  }
+
+  &__item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+
+    @include breakpoint(md) {
+      width: 100%;
+    }
+  }
+
+  &__link {
+    text-decoration: none;
+    color: $color-black;
+    padding: 1rem 0;
+    font-size: 1.8rem;
+    font-weight: lighter;
+    border-bottom: 4px solid transparent;
+    transition: all 0.3s ease-in-out;
+
+    @include breakpoint(xl) {
+      font-size: 1.6rem;
+    }
+
+    @include breakpoint(lg) {
+      text-align: center;
+      line-height: 2rem;
+    }
+
+    @include breakpoint(md) {
+      width: 100%;
+      border-bottom: none;
+    }
+
+    &:hover {
+      border-bottom: 4px solid $color-gray-light-1;
+
+      @include breakpoint(md) {
+        border: none;
+        background-color: $color-cyan-light;
+        color: $color-white;
+      }
+    }
+  }
+
+  &__info {
+    text-decoration: none;
+    font-size: 3rem;
+    font-weight: bold;
+    background-color: $color-gray-light-2;
+    color: $color-white;
+    padding: 0.5rem 1.9rem;
+    margin-left: 3rem;
+    transition: all 0.3s ease-in-out;
+
+    @include breakpoint(xl) {
+      margin-left: 1rem;
+    }
+
+    @include breakpoint(md) {
+      display: none;
+    }
+
+    &:hover {
+      background-color: $color-orange;
+    }
+  }
+}

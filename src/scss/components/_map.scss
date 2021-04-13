@@ -1,0 +1,133 @@
+.map {
+  margin-bottom: 4.5rem;
+  position: relative;
+
+  &__heading-box {
+    margin-bottom: 3rem;
+    text-align: center;
+  }
+
+  &__wrapper {
+    height: 37rem;
+    width: 100%;
+  }
+}
+
+.iw {
+  height: 100%;
+  border: 2px solid $color-cyan-light-1;
+  overflow: hidden;
+
+  &__top {
+    display: flex;
+    flex-direction: column;
+    background-color: $color-cyan-light-1;
+    padding: 1.5rem 3.5rem 1.5rem 2rem;
+  }
+
+  &__label {
+    color: $color-white;
+    margin-left: 3rem;
+    font-size: 1.3rem;
+  }
+
+  &__search-box {
+    display: flex;
+  }
+
+  &__svg-search {
+    height: 2rem;
+    width: 2rem;
+    fill: $color-white;
+    margin-right: 1rem;
+  }
+
+  &__input {
+    border: none;
+    background-color: $color-cyan-light-1;
+    border-bottom: 1px solid $color-white;
+    width: 100%;
+  }
+
+  &__wrapper {
+    overflow-y: scroll;
+    height: 28rem;
+    display: flex;
+    flex-direction: column;
+
+    @include breakpoint(md) {
+      height: 24rem;
+    }
+  }
+
+  &__card {
+    padding: 1.6rem;
+    padding-bottom: 0;
+  }
+
+  &__heading {
+    text-decoration: none;
+    color: $color-black;
+    display: flex;
+    transition: all 0.3s ease-in-out;
+    width: fit-content;
+
+    &:hover {
+      color: $color-red;
+    }
+  }
+
+  &__svg-loc {
+    height: 2.5rem;
+    width: 2rem;
+    fill: $color-cyan-light-1;
+  }
+
+  &__address-box {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__span {
+    font-size: 1.3rem;
+    margin-bottom: 0.3rem;
+  }
+
+  &__link {
+    text-decoration: none;
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: $color-cyan-light-1;
+    transition: all 0.3s ease-in-out;
+
+    &:hover {
+      color: $color-red;
+    }
+  }
+
+  &__wrapper::-webkit-scrollbar {
+    background: #fff;
+    width: 12px;
+    border: 1px solid $color-cyan-light-1;
+  }
+
+  &__wrapper::-webkit-scrollbar-thumb {
+    background: $color-cyan-light-1;
+  }
+
+  &__wrapper::-webkit-scrollbar-button:single-button:vertical:decrement {
+    background: url("../img/layer_5.png") no-repeat;
+    background-position: center;
+    content: "";
+    height: 13px;
+    width: 16px;
+  }
+
+  &__wrapper::-webkit-scrollbar-button:single-button:vertical:increment {
+    background: url("../img/layer_6.png") no-repeat;
+    background-position: center;
+    content: "";
+    height: 13px;
+    width: 16px;
+  }
+}

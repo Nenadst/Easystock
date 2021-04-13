@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="css/style.css" />
+  <title>Easystock</title>
+</head>
+
+<body>
+  <section class="header">
+    <div class="container">
+      <div class="header__top">
+        <div class="header__logo-box">
+          <img src="img/logo.png" alt="Logo" class="header__logo" />
+        </div>
+        <div class="header__contact-box">
+          <a href="#" class="header__phone">+ 44 803 40 40</a>
+          <a href="#" class="header__blog">blog</a>
+          <a href="#" class="header__about">à propos de nous</a>
+        </div>
+        <div class="header__btn-box">
+          <a href="#" class="header__mail">
+            <svg class="header__svg-mail">
+              <use xlink:href="img/sprite.svg#icon-envelope"></use>
+            </svg>
+            contact</a>
+          <select class="header__lang">
+            <option selected>fr</option>
+            <option value="1">en</option>
+            <option value="2">de</option>
+            <option value="3">sr</option>
+          </select>
+          <div class="header__icon-box">
+            <a href="#" class="header__user"><svg class="header__svg-user">
+                <use xlink:href="img/sprite.svg#icon-user"></use>
+              </svg></a>
+            <a href="#" class="header__cart"><svg class="header__svg-cart">
+                <use xlink:href="img/sprite.svg#icon-shopping-cart"></use>
+              </svg></a>
+          </div>
+        </div>
+      </div>
+      <div class="header__bottom">
+        <div class="header__search-box">
+          <svg class="header__svg-search">
+            <use xlink:href="img/sprite.svg#icon-search"></use>
+          </svg>
+          <input class="header__input" type="text" placeholder="Trouvez votre box..." />
+        </div>
+        <button class="header__hamburger" title="Menu">
+          <svg class="header__hamburger-icon">
+            <use xlink:href="img/sprite.svg#icon-menu"></use>
+          </svg>
+        </button>
+        <nav class="nav">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a href="#" class="nav__link">easybox trouver</a>
+            </li>
+            <li class="nav__item ">
+              <a href="#" class="nav__link">emplacements</a>
+            </li>
+            <li class="nav__item">
+              <a href="#" class="nav__link">salles de stockage</a>
+            </li>
+            <li class="nav__item">
+              <a href="#" class="nav__link">prestations de service</a>
+            </li>
+            <li class="nav__item">
+              <a href="#" class="nav__link">tailles et prix</a>
+            </li>
+            <a href="#" class="nav__info">i</a>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </section>
+  <section class="hero">
+    <div class="container">
+      <div class="hero__container">
+        <div class="hero__side-menu-box">
+          <div class="hero__box-top">
+            <a href="#" class="hero__link">
+              <svg class="hero__svg-map">
+                <use xlink:href="img/sprite.svg#icon-map-marker"></use>
+              </svg>
+              <span class="hero__link-text">Sion</span>
+            </a>
+            <a href="#" class="hero__link">
+              <svg class="hero__svg-map">
+                <use xlink:href="img/sprite.svg#icon-map-marker"></use>
+              </svg>
+              <span class="hero__link-text">Denges</span></a>
+            <a href="#" class="hero__link">
+              <svg class="hero__svg-map">
+                <use xlink:href="img/sprite.svg#icon-map-marker"></use>
+              </svg>
+              <span class="hero__link-text">Lausanne</span></a>
+            <a href="#" class="hero__link">
+              <svg class="hero__svg-map">
+                <use xlink:href="img/sprite.svg#icon-map-marker"></use>
+              </svg>
+              <span class="hero__link-text">Le Mont-SUR Lausanne</span></a>
+            <a href="#" class="hero__link">
+              <svg class="hero__svg-map">
+                <use xlink:href="img/sprite.svg#icon-map-marker"></use>
+              </svg>
+              <span class="hero__link-text">Lausanne-Montelly</span></a>
+          </div>
+          <div class="hero__box-bottom">
+            <a href="#" class="hero__link">
+              <svg class="hero__svg-map">
+                <use xlink:href="img/sprite.svg#icon-map-marker"></use>
+              </svg>
+              <span class="hero__link-text">Winterhur</span></a><a href="#" class="hero__link">
+              <svg class="hero__svg-map">
+                <use xlink:href="img/sprite.svg#icon-map-marker"></use>
+              </svg>
+              <span class="hero__link-text">Spreitenbach</span></a>
+          </div>
+        </div>
+        <div class="swiper-container">
+          <div class="swiper-wrapper">
+            <picture class="swiper-slide">
+              <img src="img/hero.jpg" alt="Hero img" class="hero__img" />
+            </picture>
+            <picture class="swiper-slide">
+              <img src="img/hero.jpg" alt="Hero img" class="hero__img" />
+            </picture>
+          </div>
+        </div>
+        <div class="swiper-pagination"></div>
+        <div class="swiper-button-next-1"></div>
+        <div class="swiper-button-prev-1"></div>
+      </div>
+    </div>
+  </section>
+  <section class="calculators">
+    <div class="container">
+      <div class="calculators__card-box">
+        <a href="#" class="calculators__card">
+          <img src="img/layer_1.png" alt="Img" class="calculators__img" />
+          <p href="#" class="calculators__link">calculateur <br />
+            de volume</>
+        </a>
+        <a href="#" class="calculators__card">
+          <img src="img/layer_2.png" alt="Img" class="calculators__img" />
+          <p href="#" class="calculators__link">des prix</p>
+        </a>
+        <a href="#" class="calculators__card">
+          <img src="img/layer_3.png" alt="Img" class="calculators__img" />
+          <p href="#" class="calculators__link">tour virtuel</p>
+        </a>
+        <a href="#" class="calculators__card">
+          <img src="img/layer_4.png" alt="Img" class="calculators__img" />
+          <p href="#" class="calculators__link">enregistrer <br />
+            & réservations</p>
+        </a>
+      </div>
+    </div>
+  </section>
+  <section class="promo">
+    <div class="container">
+      <div class="promo__container">
+        <div class="promo__heading-box">
+          <h2>Avantages avec Easystock</h2>
+        </div>
+        <div class="promo__wrapper">
+          <div class="promo__box">
+            <div class="promo__row">
+              <a href="#" class="promo__text">
+                <svg class="promo__svg-check">
+                  <use xlink:href="img/sprite.svg#icon-checkmark-outline"></use>
+                </svg>
+                <span class="promo__span"> Box individuel</span></a>
+            </div>
+            <div class="promo__row">
+              <a href="#" class="promo__text">
+                <svg class="promo__svg-check">
+                  <use xlink:href="img/sprite.svg#icon-checkmark-outline"></use>
+                </svg>
+                <span class="promo__span"> Sécurité 24/24 Accès 7/7</span></a>
+            </div>
+            <div class="promo__row">
+              <a href="#" class="promo__text">
+                <svg class="promo__svg-check">
+                  <use xlink:href="img/sprite.svg#icon-checkmark-outline"></use>
+                </svg>
+                <span class="promo__span"> Emplacement stratégique</span></a>
+            </div>
+            <div class="promo__row">
+              <a href="#" class="promo__text">
+                <svg class="promo__svg-check">
+                  <use xlink:href="img/sprite.svg#icon-checkmark-outline"></use>
+                </svg>
+                <span class="promo__span"> Bon rapport qualité/prix</span></a>
+            </div>
+            <div class="promo__row">
+              <a href="#" class="promo__text">
+                <svg class="promo__svg-check">
+                  <use xlink:href="img/sprite.svg#icon-checkmark-outline"></use>
+                </svg>
+                <span class="promo__span"> Secs et tempérés</span></a>
+            </div>
+          </div>
+          <div class="promo__box">
+            <div class="promo__row">
+              <a href="#" class="promo__text">
+                <svg class="promo__svg-check">
+                  <use xlink:href="img/sprite.svg#icon-checkmark-outline"></use>
+                </svg>
+                <span class="promo__span">
+                  Espace de livraison couvert</span></a>
+            </div>
+            <div class="promo__row">
+              <a href="#" class="promo__text">
+                <svg class="promo__svg-check">
+                  <use xlink:href="img/sprite.svg#icon-checkmark-outline"></use>
+                </svg>
+                <span class="promo__span"> Réception de colis</span></a>
+            </div>
+            <div class="promo__row">
+              <a href="#" class="promo__text">
+                <svg class="promo__svg-check">
+                  <use xlink:href="img/sprite.svg#icon-checkmark-outline"></use>
+                </svg>
+                <span class="promo__span"> Accès wifi gratuit</span></a>
+            </div>
+            <div class="promo__row">
+              <a href="#" class="promo__text">
+                <svg class="promo__svg-check">
+                  <use xlink:href="img/sprite.svg#icon-checkmark-outline"></use>
+                </svg>
+                <span class="promo__span">
+                  Lorem ipsum dolor sit amet</span></a>
+            </div>
+          </div>
+        </div>
+        <div class="promo__text-box">
+          <span class="promo__btn-text">Réservation et inscription gratuites</span>
+        </div>
+        <div class="promo__btn-box">
+          <a href="#" class="promo__btn">réserve</a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="blog">
+    <div class="container">
+      <div class="blog__container">
+        <div class="blog__heading-box">
+          <h2>EasyBlog</h2>
+        </div>
+        <div class="blog__card-box">
+          <div class="blog__card">
+            <div class="blog__img-box">
+              <a href="#"><img src="img/blog.jpg" alt="Blog img" class="blog__img" /></a> 
+            </div>
+            <div class="blog__wrapper">
+              <a href="#" class="blog__link">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit
+              </a>
+              <p class="blog__text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Nullam a orci ut mi semper fermentum porttitor eget est. Sed
+                aliquet, sapien nec interdum tincidunt, magna est laoreet
+                justo, eget ...
+              </p>
+              <a href="#" class="blog__btn">lire la suite</a>
+            </div>
+          </div>
+          <div class="blog__card">
+            <div class="blog__img-box">
+              <a href="#"><img src="img/blog.jpg" alt="Blog img" class="blog__img" /></a> 
+            </div>
+            <div class="blog__wrapper">
+              <a href="#" class="blog__link">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit
+              </a>
+              <p class="blog__text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Nullam a orci ut mi semper fermentum porttitor eget est. Sed
+                aliquet, sapien nec interdum tincidunt, magna est laoreet
+                justo, eget ...
+              </p>
+              <a href="#" class="blog__btn">lire la suite</a>
+            </div>
+          </div>
+          <div class="blog__card">
+            <div class="blog__img-box">
+              <a href="#"><img src="img/blog.jpg" alt="Blog img" class="blog__img" /></a> 
+            </div>
+            <div class="blog__wrapper">
+              <a href="#" class="blog__link">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit
+              </a>
+              <p class="blog__text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Nullam a orci ut mi semper fermentum porttitor eget est. Sed
+                aliquet, sapien nec interdum tincidunt, magna est laoreet
+                justo, eget ...
+              </p>
+              <a href="#" class="blog__btn">lire la suite</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="map">
+    <div class="container">
+      <div class="map__heading-box">
+        <h2>Où nous trouvez-vous?</h2>
+      </div>
+      <div class="map__wrapper" id="map"></div>
+    </div>
+  </section>
+  <section class="partners">
+    <div class="container">
+      <div class="partners__heading-box">
+        <h2>Les partenaires</h2>
+      </div>
+      <div class="partners__slider-box">
+        <button class="partners__slider-btn partners__slider-btn--left">
+          <svg class="partners__svg">
+            <use xlink:href="img/sprite.svg#icon-arrow_back_ios"></use>
+          </svg>
+        </button>
+      <div class="partners__slider">
+        <div class="partners__slide">
+          <img src="img/partner-1.jpg" alt="" class="partners__img" />
+        </div>
+        <div class="partners__slide">
+          <img src="img/partner-1.jpg" alt="" class="partners__img" />
+        </div>
+        <div class="partners__slide">
+          <img src="img/partner-1.jpg" alt="" class="partners__img" />
+        </div>
+        <div class="partners__slide">
+          <img src="img/partner-1.jpg" alt="" class="partners__img" />
+        </div>
+        <div class="partners__slide">
+          <img src="img/partner-1.jpg" alt="" class="partners__img" />
+        </div>
+        <div class="partners__slide">
+          <img src="img/partner-1.jpg" alt="" class="partners__img" />
+        </div>
+        <div class="partners__slide">
+          <img src="img/partner-1.jpg" alt="" class="partners__img" />
+        </div>
+        <div class="partners__slide">
+          <img src="img/partner-1.jpg" alt="" class="partners__img" />
+        </div>
+      </div>
+        <button class="partners__slider-btn partners__slider-btn--right">
+          <svg class="partners__svg">
+            <use xlink:href="img/sprite.svg#icon-arrow_forward_ios"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </section>
+  <footer class="footer">
+    <div class="footer__btn-box">
+      <a href="#" class="footer__btn-up">
+        <svg class="footer__svg-arrow">
+          <use xlink:href="img/sprite.svg#icon-keyboard_arrow_up"></use>
+        </svg>
+      </a>
+    </div>
+    <div class="container">
+      <div class="footer__heading-box">
+        <h3>contactez nou</h3>
+      </div>
+      <div class="footer__container">
+        <div class="footer__contact-box">
+          <div class="footer__card">
+            <div class="footer__card-heading">
+              <h4>denges (siège)</h4>
+            </div>
+            <address class="footer__address">
+              <span class="footer__text-white">Adresse :</span>
+              <span class="footer__text-gray">
+                Route de Préverenges 2 <br />1026 Denges</span>
+              <span class="footer__text-white">Email :</span>
+              <span class="footer__text-gray"><a href="mailto:info@easystock.ch"
+                  class="footer__link">info@easystock.ch</a>
+              </span>
+              <span class="footer__text-white">Téléphone : </span>
+              <span class="footer__text-gray"><a href="tel:021 802 50 52" class="footer__link">021 802 50 52</a>
+              </span>
+            </address>
+          </div>
+          <div class="footer__card">
+            <div class="footer__card-heading">
+              <h4>LAUSANNE</h4>
+            </div>
+            <address class="footer__address">
+              <span class="footer__text-white">Adresse :</span>
+              <span class="footer__text-gray">
+                Av. de Cour 143 <br />
+                1007 Lausanne <br />
+                (accès sous Denner par <br />
+                l’Av. de Montoie)</span>
+              <span class="footer__text-white">Email :</span>
+              <span class="footer__text-gray"><a href="mailto:info@easystock.ch"
+                  class="footer__link">info@easystock.ch</a>
+              </span>
+              <span class="footer__text-white">Téléphone : </span>
+              <span class="footer__text-gray"><a href="tel:021 802 50 52" class="footer__link">021 802 50 52</a>
+              </span>
+            </address>
+          </div>
+          <div class="footer__card">
+            <div class="footer__card-heading">
+              <h4>LE MONT-SUR-LAUSANNE</h4>
+            </div>
+            <address class="footer__address">
+              <span class="footer__text-white">Adresse :</span>
+              <span class="footer__text-gray">
+                Chemin de Maillefer 36 <br />
+                1052 Le Mont-sur-Lausanne</span>
+              <span class="footer__text-white">Email :</span>
+              <span class="footer__text-gray"><a href="mailto:info@easystock.ch"
+                  class="footer__link">info@easystock.ch</a>
+              </span>
+              <span class="footer__text-white">Téléphone : </span>
+              <span class="footer__text-gray"><a href="tel:021 802 50 52" class="footer__link">021 802 50 52</a>
+              </span>
+            </address>
+          </div>
+          <div class="footer__card">
+            <div class="footer__card-heading">
+              <h4>SPREITENBACH</h4>
+            </div>
+            <address class="footer__address">
+              <span class="footer__text-white">Adresse :</span>
+              <span class="footer__text-gray">
+                Bahnhofstrasse 134 <br />
+                8957 Spreitenbach</span>
+              <span class="footer__text-white">Email :</span>
+              <span class="footer__text-gray"><a href="mailto:spreitenbach@easystock.ch"
+                  class="footer__link">sprtenbach@easystock.ch</a>
+              </span>
+              <span class="footer__text-white">Téléphone: </span>
+              <span class="footer__text-gray"><a href="tel:044 803 40 40" class="footer__link">044 803 40 40</a>
+              </span>
+            </address>
+          </div>
+          <div class="footer__card">
+            <div class="footer__card-heading">
+              <h4>SION</h4>
+            </div>
+            <address class="footer__address">
+              <span class="footer__text-white">Adresse :</span>
+              <span class="footer__text-gray">
+                Route de Lausanne 84 <br />
+                1950 Sion</span>
+              <span class="footer__text-white">Email :</span>
+              <span class="footer__text-gray"><a href="mailto:
+                  sion@easystock.ch" class="footer__link">
+                  sion@easystock.ch</a>
+              </span>
+              <span class="footer__text-white">Téléphone : </span>
+              <span class="footer__text-gray"><a href="tel: 027 552 05 05" class="footer__link"></a>
+                027 552 05 05</a>
+              </span>
+            </address>
+          </div>
+          <div class="footer__card">
+            <div class="footer__card-heading">
+              <h4>LAUSANNE-MONTELLY</h4>
+            </div>
+            <address class="footer__address">
+              <span class="footer__text-white">Adresse :</span>
+              <span class="footer__text-gray">
+                Chemin de Montelly 78 <br>1007 Lausanne</span>
+              <span class="footer__text-white">Email :</span>
+              <span class="footer__text-gray"><a href="mailto:info@easystock.ch"
+                  class="footer__link">info@easystock.ch</a>
+              </span>
+              <span class="footer__text-white">Téléphone : </span>
+              <span class="footer__text-gray"><a href="tel:021 802 50 52" class="footer__link">021 802 50 52</a>
+              </span>
+            </address>
+          </div>
+          <div class="footer__card">
+            <div class="footer__card-heading">
+              <h4>denges (siège)</h4>
+            </div>
+            <address class="footer__address">
+              <span class="footer__text-white">Adresse :</span>
+              <span class="footer__text-gray">
+                Route de Préverenges 2 <br />
+                1026 Denges</span>
+              <span class="footer__text-white">Email :</span>
+              <span class="footer__text-gray"><a href="mailto:info@easystock.ch"
+                  class="footer__link">info@easystock.ch</a>
+              </span>
+              <span class="footer__text-white">Téléphone : </span>
+              <span class="footer__text-gray"><a href="tel:021 802 50 52" class="footer__link">021 802 50 52</a>
+              </span>
+            </address>
+          </div>
+        </div>
+        <div class="footer__form-box">
+          <p class="footer__text-gray">
+            N’hésitez pas à nous contacter pour toutes questions et
+            informations complémentaires, Nous nous ferons un plaisir de
+            vous répondre.
+          </p>
+          <div class="footer__form">
+            <div class="footer__form-row">
+              <label for="Name" class="footer__label"> Nom & Prénom </label>
+              <input type="text" placeholder="* EX. John Smit" class="footer__input">
+            </div>
+            <div class="footer__form-row">
+              <label for="Name" class="footer__label"> Adresse e-mail </label>
+              <input type="email" placeholder="* EX. john.smit@example.com" class="footer__input">
+            </div>
+            <div class="footer__form-row">
+              <label for="Name" class="footer__label"> Téléphone </label>
+              <input type="tel" placeholder="* EX. +41 12 345 67 89" class="footer__input">
+            </div>
+            <div class="footer__form-row">
+              <label for="Name" class="footer__label"> Commentaires </label>
+              <textarea type="message" placeholder="* Write a comment" class="footer__msg" id="message"
+                required></textarea>
+            </div>
+            <div class="footer__form-row">
+              <label for="Name" class="footer__label"> Commentaires </label>
+              <select class="footer__select">
+                <option value="1">Lausanne</option>
+                <option value="2">Denges</option>
+                <option value="3">Le Mont-sur-Lausanne</option>
+                <option value="4">Spreitenbach</option>
+                <option value="14">Sion</option>
+                <option value="17">Lausanne-Montelly</option>
+                <option value="20">Winterthur</option>
+              </select>
+              <div class="footer__recaptcha">
+                <img src="img/recaptcha.png" alt="">
+              </div>
+              <button class="footer__btn">envoyer</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script src="js/map.js"></script>
+  <script src="js/app.js"></script>
+  <script
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCxx46IuvIbYa6EhnCY7JuTY_w2YcCzzCw&callback=initMap&libraries=&v=weekly"
+    async></script>
+</body>
+
+</html>

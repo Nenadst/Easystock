@@ -1,0 +1,48 @@
+.calculators {
+  margin-bottom: 5rem;
+
+  &__card-box {
+    display: flex;
+    justify-content: space-around;
+
+    @include breakpoint(sm) {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+
+  &__card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    border-bottom: 2px solid transparent;
+    transition: all 0.2s ease-in-out;
+
+    @include breakpoint(md) {
+      margin-bottom: 2rem;
+    }
+
+    &:hover {
+      border-bottom: 2px solid $color-black;
+    }
+
+    &:hover .calculators__link {
+      color: $color-black;
+    }
+  }
+
+  &__img {
+    height: 5rem;
+    margin-bottom: 2rem;
+  }
+
+  &__link {
+    text-transform: uppercase;
+    color: $color-gray;
+    font-weight: bold;
+    text-align: center;
+    padding-bottom: 1rem;
+  }
+}

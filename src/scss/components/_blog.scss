@@ -1,0 +1,83 @@
+.blog {
+  margin-bottom: 4.5rem;
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__heading-box {
+    margin-bottom: 4rem;
+  }
+
+  &__card-box {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    @include breakpoint(md) {
+      flex-direction: column;
+    }
+  }
+
+  &__card {
+    flex: 0 0 32.5%;
+    overflow: hidden;
+    @include breakpoint(md) {
+      margin-bottom: 3rem;
+    }
+  }
+
+  &__img-box {
+    margin-bottom: 2.5rem;
+    overflow: hidden;
+    &:hover .blog__img {
+      transform: scale(1.2);
+    }
+  }
+
+  &__img {
+    transition: all 1s ease-in-out;
+
+    &:hover {
+      transform: scale(1.2);
+    }
+  }
+  &__wrapper {
+    padding: 0 1.2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__link {
+    text-decoration: none;
+    color: $color-gray;
+    font-size: 2.4rem;
+    font-weight: bold;
+    color: $color-gray;
+    margin-bottom: 2rem;
+    display: flex;
+  }
+
+  &__text {
+    font-size: 1.6rem;
+    margin-bottom: 2.5rem;
+  }
+
+  &__btn {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 1.8rem;
+    color: $color-earls-green;
+    padding: 1.3rem 1.6rem;
+    display: inline-block;
+    border: 1px solid $color-earls-green;
+
+    &:hover {
+      color: $color-green;
+      border: 1px solid $color-green;
+      box-shadow: 0.1rem 0.1rem 1.1rem rgba($color-earls-green, 0.3);
+    }
+  }
+}
